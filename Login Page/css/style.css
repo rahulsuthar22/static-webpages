@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Archivo", sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    padding: 50px 100px;
+}
+
+.navbar {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: #585857;
+    text-decoration: none;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.heading {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #585857;
+}
+
+input {
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.btn {
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.side-image {
+    max-width: 40%;
+    padding: 200px 100px;
+    background-color: #fdf6fd;
+}
+
+.side-image h3 {
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.writer {
+    display: flex;
+}
+
+.writer img {
+    width: 20%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.name {
+    font-size: 12px;
+}
+
+.name p:last-child {
+    color: #585857;
+}
+
+#myDiv1,
+#myDiv2 {
+    font-size: 12px;
+    color: red;
+}
+
+
+/* media quaries */
+
+@media only screen and (max-width:768px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 60px;
+    }
+    .back {
+        position: absolute;
+        top: 30px;
+        right: 60px;
+    }
+    .side-image {
+        margin-top: 70px;
+        max-width: 100%;
+        padding: 60px;
+    }
+    .main {
+        padding: 0 60px;
+    }
+    .heading {
+        font-size: 40px;
+    }
+    .center-content p {
+        margin-bottom: 20px;
+    }
+    .writer img {
+        width: 15%;
+    }
+    .name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .logo {
+        left: 40px
+    }
+    .back {
+        right: 40px;
+        font-size: 12px;
+    }
+    .main {
+        padding: 0 40px;
+    }
+    .side-image {
+        padding: 20px 40px;
+    }
+    .side-image h3 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .heading {
+        font-size: 20px;
+    }
+    p,
+    .btn,
+    input,
+    label {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .partner-img img {
+        width: 100px;
+    }
+}
